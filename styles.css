@@ -240,10 +240,6 @@ body {
         padding-inline: 1.5rem;
     }
 
-    #form__button {
-        font-size: 0.7rem;
-    }
-
     .container__header {
         padding-inline: 0;
     }
@@ -252,8 +248,11 @@ body {
         font-size: 0.9rem;
     }
 
-    
     .container__wrapper-join {
         font-size: 0.8rem;
+    }
+
+    #form__button {
+        font-size: 0.7rem;
     }
 }

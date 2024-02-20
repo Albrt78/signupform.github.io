@@ -1,10 +1,10 @@
 ## Table of contents
 
 -   [Overview](#overview)
-    -   [The challenge](#the-challenge)
-    -   [Screenshot](#screenshot)
-    -   [Links](#links)
-    -   [Built with](#built-with)
+-   [The challenge](#the-challenge)
+-   [Screenshot](#screenshot)
+-   [Links](#links)
+-   [Built with](#built-with)
 -   [Author](#author)
 
 ## Overview
@@ -13,7 +13,7 @@ This challenge is designed based on the provided template from Frontend Mentor w
 
 ### Screenshot
 
-![](./Screenshot_Sign_Up.png)
+![](./Sign_Up_Form_Screenshot.png)
 
 ### Links
 

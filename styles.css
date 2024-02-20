@@ -244,6 +244,15 @@ body {
         font-size: 0.7rem;
     }
 
+    .container__header {
+        padding-inline: 0;
+    }
+
+    .container__description {
+        font-size: 0.9rem;
+    }
+
+    
     .container__wrapper-join {
         font-size: 0.8rem;
     }

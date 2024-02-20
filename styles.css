@@ -1,0 +1,246 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+
+:root {
+    --red: hsl(0, 100%, 74%);
+    --green: hsl(154, 59%, 51%);
+    --blue: hsl(248, 32%, 49%);
+    --Dark-Blue: hsl(249, 10%, 26%);
+    --Grayish-Blue: hsl(246, 25%, 77%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    border: none;
+    outline: none;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--red);
+    background-image: url("images/bg-intro-desktop.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 100dvh;
+    font-family: "Poppins", sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    display: grid;
+    place-items: center;
+    grid-template-columns: 20fr 11fr;
+    gap: 3rem;
+    padding-inline: 10.3rem;
+    margin-block-start: 10rem;
+}
+
+.container__header {
+    display: flex;
+    flex-direction: column;
+    color: #fff;
+    text-align: left;
+    margin-top: -8.3rem;
+    width: 100%;
+}
+
+.container__subtitle {
+    font-weight: 700;
+    font-size: 3.05rem;
+    line-height: 1.1;
+}
+
+.container__description {
+    margin-top: 2rem;
+    line-height: 1.6;
+    letter-spacing: 0.002rem;
+    color: #fff;
+    font-weight: 400;
+    font-size: 1rem;
+}
+
+.container__wrapper {
+    width: 540px;
+    margin-top: -5.5rem;
+}
+
+.container__wrapper-join {
+    background-color: var(--blue);
+    color: #fff;
+    text-align: center;
+    width: 100%;
+    font-size: 0.97rem;
+    font-weight: 400;
+    border-radius: 0.5rem;
+    box-shadow: 0 7px 0 0 #00000028;
+    padding-block: 1.17rem;
+    margin-bottom: 1.45rem;
+}
+
+.container__wrapper form {
+    background-color: #fff;
+    height: auto;
+    border-radius: 10px;
+    padding-inline: 2.4rem;
+    padding-block-start: 1rem;
+    padding-block-end: 2.5rem;
+    box-shadow: 0 8px 0 0 #00000028;
+    margin-bottom: 3rem;
+}
+
+.form__group {
+    position: relative;
+}
+
+.form__group .fa-solid {
+    position: absolute;
+    right: 30px;
+    font-size: 18px;
+    color: var(--red);
+    visibility: hidden;
+}
+
+.form__group:is(.fname, .lname, .e-mail, .password) .fa-solid {
+    top: 53%;
+}
+
+.form__group label {
+    position: absolute;
+    bottom: -17px;
+    right: 0;
+    color: var(--red);
+    font-size: 0.7em;
+    font-style: italic;
+    font-weight: 600;
+    visibility: hidden;
+}
+
+.container__wrapper form input {
+    border: 1px solid lightgray;
+    width: 100%;
+    font-weight: 600;
+    font-size: 1rem;
+    border-radius: 5px;
+    padding-block: 18px;
+    padding-inline-start: 35px;
+}
+
+.container__wrapper form input:not(:first-child) {
+    margin-top: 1.3rem;
+}
+
+.container__wrapper form input:focus {
+    border: 2px solid black;
+}
+
+::placeholder {
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+}
+
+#form__button {
+    background-color: var(--green);
+    font-weight: 700;
+    font-size: 0.88rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05rem;
+    color: #fff;
+    width: 100%;
+    margin-bottom: 18px;
+    margin-top: 20px;
+    padding-block: 18px;
+    border-radius: 5px;
+    box-shadow: 0 5px 0 0 hsla(154, 57%, 42%, 0.829);
+}
+
+#form__button:hover {
+    opacity: 0.75;
+}
+
+.form__terms {
+    text-align: center;
+    color: var(--Grayish-Blue);
+    font-size: 0.68rem;
+    font-weight: 400;
+    padding-inline: 15px;
+}
+
+.form__terms strong a {
+    color: var(--red);
+    text-decoration: none;
+}
+
+/* Media Query */
+@media (max-width: 1280.98px) {
+    .container {
+        padding-inline: 4rem;
+        margin-top: 8rem;
+    }
+
+    .container__subtitle {
+        font-size: 3rem;
+        max-width: 500px;
+    }
+
+    .container__description {
+        font-size: 1rem;
+        max-width: 570px;
+    }
+}
+
+@media (max-width: 992.98px) {
+    .container {
+        grid-template-columns: 1fr;
+        gap: 10rem;
+        width: 100%;
+        margin-block-start: 12rem;
+    }
+
+    .container__header {
+        padding-inline: 2rem;
+        text-align: center;
+    }
+
+    .container__subtitle {
+        max-width: 100%;
+    }
+
+    .container__description {
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 767.98px) {
+    .container__subtitle {
+        font-size: 2rem;
+    }
+
+    .container__description {
+        font-weight: 400;
+        font-size: 1.1rem;
+    }
+
+    .container__wrapper {
+        width: 100%;
+    }
+}
+
+@media (max-width: 566.98px) {
+    body {
+        background-image: url("images/bg-intro-mobile.png");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: top center;
+    }
+
+    .container {
+        padding-inline: 1.5rem;
+    }
+
+    #form__button {
+        font-size: 0.7rem;
+    }
+}

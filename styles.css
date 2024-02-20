@@ -243,4 +243,8 @@ body {
     #form__button {
         font-size: 0.7rem;
     }
+
+    .container__wrapper-join {
+        font-size: 0.8rem;
+    }
 }

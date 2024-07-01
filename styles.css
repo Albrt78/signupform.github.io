@@ -256,3 +256,31 @@ body {
         font-size: 0.7rem;
     }
 }
+
+@media (max-width: 395.98px) {
+    .container__wrapper form {
+        padding-inline: 1.5rem;
+        padding-block-start: 0.8rem;
+        padding-block-end: 2rem;
+    }
+}
+
+@media (max-width: 320.98px) {
+    .container__wrapper form {
+        padding-inline: 1.2em;
+        padding-block-start: 0;
+        padding-block-end: 1rem;
+    }
+
+    .container__wrapper form input {
+        font-size: 0.8rem;
+        padding-block: 15px;
+        padding-inline-start: 20px;
+    }
+
+    #form__button {
+        font-size: 0.7rem;
+        margin-top: 30px;
+        padding-block: 15px;
+    }
+}
